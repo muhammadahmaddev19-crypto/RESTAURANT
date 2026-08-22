@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ember Trattoria</title>
+<meta name="description" content="Get in touch with Ember Trattoria.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="index.html">Ember <span>Trattoria</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+  <section style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">Say hello</span>
+      <h1 style="font-size:clamp(2rem,4vw,3rem);">Get in Touch</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container info-grid">
+      <form id="contact-form" class="form-card" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <div class="field">
+          <label for="c-name">Name</label>
+          <input type="text" id="c-name" name="name" required>
+          <div class="field-error">Please enter your name.</div>
+        </div>
+        <div class="field">
+          <label for="c-email">Email</label>
+          <input type="email" id="c-email" name="email" required>
+          <div class="field-error">Please enter a valid email address.</div>
+        </div>
+        <div class="field">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" required></textarea>
+          <div class="field-error">Please enter a message.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+
+      <div>
+        <h3>Visit</h3>
+        <p style="margin:10px 0 24px;">128 Kiln Street<br>Riverside District</p>
+        <h3>Reach us</h3>
+        <p style="margin:10px 0 24px;">
+          <a href="tel:+15551234567">(555) 123-4567</a><br>
+          <a href="mailto:hello@embertrattoria.com">hello@embertrattoria.com</a>
+        </p>
+        <h3>Hours</h3>
+        <ul class="info-list" style="margin-top:10px;">
+          <li><span>Mon – Thu</span><span>5:00 PM – 10:00 PM</span></li>
+          <li><span>Fri – Sat</span><span>5:00 PM – 11:00 PM</span></li>
+          <li><span>Sunday</span><span>4:00 PM – 9:00 PM</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Ember Trattoria</h4>
+        <p>128 Kiln Street<br>Riverside District</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+15551234567">(555) 123-4567</a>
+        <a href="mailto:hello@embertrattoria.com">hello@embertrattoria.com</a>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="menu.html">Menu</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Ember Trattoria. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
